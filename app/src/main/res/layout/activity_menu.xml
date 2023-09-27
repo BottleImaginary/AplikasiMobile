@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:background="#009688"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnkeluar"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="keluar"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/pngwing_com" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnambilgmbr"
+        android:layout_width="163dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="124dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="ambilgambar"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plus2_removebg_preview" />
+
+    <TextView
+        android:id="@+id/txtambilgambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="299dp"
+        android:layout_marginEnd="161dp"
+        android:text="Ambil Gambar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnimportgmbr"
+        android:layout_width="163dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:contentDescription="importgambar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/import__1_" />
+
+    <TextView
+        android:id="@+id/txtimport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="158dp"
+        android:text="Import Gambar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
