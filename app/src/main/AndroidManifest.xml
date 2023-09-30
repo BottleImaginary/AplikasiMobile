@@ -24,7 +24,7 @@
             android:name=".menu"
             android:exported="true" />
         <activity
-            android:name=".nyoba"
+            android:name=".takephoto"
             android:exported="true" />
         <activity
             android:name=".depan"

@@ -15,7 +15,7 @@ import androidx.core.content.ContextCompat
 import android.Manifest
 import android.widget.ImageButton
 
-class nyoba : AppCompatActivity() {
+class takephoto : AppCompatActivity() {
 
     private val CAMERA_PERMISSION_REQUEST_CODE = 200
     private lateinit var imageView: ImageView
