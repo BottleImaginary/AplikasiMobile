@@ -24,14 +24,24 @@
             android:contentDescription="keluar"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/pngwing_com" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Home Page"
+            android:textColor="#FFFFFF"
+            android:typeface="serif" />
+
     </LinearLayout>
 
     <ImageButton
         android:id="@+id/btnambilgmbr"
-        android:layout_width="163dp"
-        android:layout_height="129dp"
+        android:layout_width="119dp"
+        android:layout_height="110dp"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="124dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="ambilgambar"
@@ -39,44 +49,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plus2_removebg_preview" />
+        app:srcCompat="@drawable/take_a_photo" />
 
     <TextView
         android:id="@+id/txtambilgambar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="299dp"
+        android:layout_marginTop="256dp"
         android:layout_marginEnd="161dp"
         android:text="Ambil Gambar"
+        android:textIsSelectable="false"
+        android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btnimportgmbr"
-        android:layout_width="163dp"
-        android:layout_height="129dp"
+        android:layout_width="119dp"
+        android:layout_height="110dp"
         android:layout_marginStart="124dp"
         android:layout_marginEnd="124dp"
         android:layout_marginBottom="250dp"
         android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerCrop"
         android:contentDescription="importgambar"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/import__1_" />
+        app:srcCompat="@drawable/import_hijau" />
 
     <TextView
         android:id="@+id/txtimport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="504dp"
+        android:layout_marginTop="492dp"
         android:layout_marginEnd="158dp"
         android:text="Import Gambar"
+        android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
