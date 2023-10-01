@@ -25,14 +25,14 @@ class takephoto : AppCompatActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 val data: Intent? = result.data
-                val capturedImage = data?.extras?.getString("data") as Bitmap
-                imageView.setImageBitmap(capturedImage)
+                val imageBitmap = data?.extras?.getString("data") as Bitmap
+                imageView.setImageBitmap(imageBitmap)
             }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nyoba)
+        setContentView(R.layout.takephoto)
 
         val ImageButton: ImageButton = findViewById(R.id.btnkembali)
         ImageButton.setOnClickListener {
