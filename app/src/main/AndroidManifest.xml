@@ -6,9 +6,9 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +20,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bottle"
         tools:targetApi="31">
+        <activity
+            android:name=".nyacak"
+            android:exported="true"
+            android:label="@string/title_activity_nyacak"
+            android:theme="@style/Theme.Bottle" />
         <activity
             android:name=".menu"
             android:exported="true" />

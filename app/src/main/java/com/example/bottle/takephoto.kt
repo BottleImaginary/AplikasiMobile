@@ -13,6 +13,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import android.Manifest
+import android.net.Uri
 import android.widget.ImageButton
 
 class takephoto : AppCompatActivity() {
@@ -24,9 +25,9 @@ class takephoto : AppCompatActivity() {
     private val takePhotoLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
-                val data: Intent? = result.data
-                val imageBitmap = data?.extras?.getString("data") as Bitmap
-                imageView.setImageBitmap(imageBitmap)
+                var data: Intent? = result.data
+                var imageUri:Uri? = null
+                imageView.setImageURI(imageUri)
             }
         }
 
