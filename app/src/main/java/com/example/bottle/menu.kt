@@ -19,7 +19,7 @@ class menu : AppCompatActivity() {
         }
 
         btnambilgmbr.setOnClickListener {
-            val intent = Intent(this, takephoto::class.java)
+            val intent = Intent(this, ambilgambar::class.java)
             startActivity(intent)
         }
     }
