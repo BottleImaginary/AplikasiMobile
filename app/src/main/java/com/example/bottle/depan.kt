@@ -18,9 +18,6 @@ class depan : AppCompatActivity() {
             val intent = Intent(this, menu::class.java)
             startActivity(intent)
         }
-        val exitButton = findViewById<ImageButton>(R.id.btnkelaurapk)
-        exitButton.setOnClickListener {
-            finish() // Menutup aktivitas dan keluar dari aplikasi
-        }
+
     }
 }
