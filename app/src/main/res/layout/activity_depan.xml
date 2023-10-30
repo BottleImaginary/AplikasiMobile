@@ -28,16 +28,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <ImageButton
-        android:id="@+id/btnkelaurapk"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="1dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="keluarapk"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pngwing_com"
-        app:tint="#AACC67" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@ class menu : AppCompatActivity() {
 
         val btnkeluar: ImageButton = findViewById(R.id.btnkeluar)
         val btnambilgmbr: ImageButton = findViewById(R.id.btnambilgmbr)
-
+        val btnimportgmbr: ImageButton = findViewById(R.id.btnimportgmbr)
         btnkeluar.setOnClickListener {
             val intent = Intent(this, depan::class.java)
             startActivity(intent)
@@ -20,6 +20,10 @@ class menu : AppCompatActivity() {
 
         btnambilgmbr.setOnClickListener {
             val intent = Intent(this, ambilgambar::class.java)
+            startActivity(intent)
+        }
+        btnimportgmbr.setOnClickListener {
+            val intent = Intent(this, importgambar::class.java)
             startActivity(intent)
         }
     }

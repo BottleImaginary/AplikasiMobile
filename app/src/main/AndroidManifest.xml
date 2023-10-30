@@ -21,6 +21,9 @@
         android:theme="@style/Theme.Bottle"
         tools:targetApi="31">
         <activity
+            android:name=".importgambar"
+            android:exported="true" />
+        <activity
             android:name=".ambilgambar"
             android:exported="true" />
         <activity
