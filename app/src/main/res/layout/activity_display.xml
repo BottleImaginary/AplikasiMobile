@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Display">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="#AACC67"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnkembali3"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="kembali"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/kembali"
+            app:tint="#FBFBFA" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Display"
+            android:textColor="#FFFFFF"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="670dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F3F1E6"
+        android:contentDescription="scrollview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

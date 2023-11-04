@@ -5,28 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F3F1E6"
-    tools:context=".ambilgambar">
-
-    <ImageView
-        android:id="@+id/hasilfoto"
-        android:layout_width="409dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginBottom="364dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+    tools:context=".Importfoto">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="411dp"
-        android:layout_height="0dp"
+        android:layout_height="54dp"
         android:background="#AACC67"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -42,57 +29,62 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="101dp"
-            android:layout_height="wrap_content"
+            android:layout_width="126dp"
+            android:layout_height="31dp"
             android:layout_gravity="center_vertical"
-            android:text="Ambil Gambar"
+            android:text="Import Gambar"
             android:textColor="#FFFFFF"
             android:typeface="serif" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnlabelfoto"
-        android:layout_width="177dp"
-        android:layout_height="50dp"
-
-        android:layout_marginStart="117dp"
-        android:layout_marginEnd="117dp"
-        android:layout_marginBottom="52dp"
-        android:text="Tambahkan Data"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#070707"
-        android:textIsSelectable="false"
+        android:id="@+id/buttonAdd"
+        android:layout_width="164dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="59dp"
+        android:text="Add Data"
+        android:textSize="14sp"
         android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="409dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="4dp"
-        android:background="#DCEDC8"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="293dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="113dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hasilfoto"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="411dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="118dp"
+        android:background="#DCEDC8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="344dp">
+            android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/editTextName2"
+                android:id="@+id/editTextName"
                 android:layout_width="219dp"
                 android:layout_height="54dp"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="43dp"
-                android:layout_marginBottom="154dp"
+                android:layout_marginStart="163dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="30dp"
                 android:backgroundTint="#090808"
                 android:ems="10"
                 android:hint="Masukkan merk botol"
@@ -103,19 +95,17 @@
                 android:textColorLink="#000000"
                 android:textSize="15sp"
                 android:typeface="serif"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.706" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/lantai2"
+                android:id="@+id/lantai"
                 android:layout_width="107dp"
                 android:layout_height="21dp"
-                android:layout_marginStart="45dp"
+                android:layout_marginStart="46dp"
                 android:layout_marginTop="114dp"
-                android:layout_marginEnd="259dp"
-                android:layout_marginBottom="116dp"
+                android:layout_marginBottom="128dp"
                 android:shadowColor="#131313"
                 android:text="Lantai          :"
                 android:textColor="#0B0A0A"
@@ -125,20 +115,16 @@
                 android:textStyle="bold"
                 android:typeface="serif"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.706" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView4"
                 android:layout_width="107dp"
                 android:layout_height="21dp"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="168dp"
-                android:layout_marginEnd="259dp"
-                android:layout_marginBottom="62dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="72dp"
                 android:shadowColor="#131313"
                 android:text="Tanggal       :"
                 android:textColor="#0B0A0A"
@@ -148,20 +134,15 @@
                 android:textStyle="bold"
                 android:typeface="serif"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.706" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextDate2"
+                android:id="@+id/editTextDate"
                 android:layout_width="219dp"
                 android:layout_height="54dp"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="154dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="43dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="57dp"
                 android:backgroundTint="#090808"
                 android:ems="10"
                 android:hint="Masukkan Tanggal"
@@ -173,20 +154,14 @@
                 android:textSize="15sp"
                 android:typeface="serif"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.706" />
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <EditText
-                android:id="@+id/editTextLokasi2"
+                android:id="@+id/editTextLokasi"
                 android:layout_width="219dp"
                 android:layout_height="54dp"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="98dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="99dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="111dp"
                 android:backgroundTint="#090808"
                 android:ems="10"
                 android:hint="Masukkan lokasi lantai"
@@ -198,20 +173,15 @@
                 android:textSize="15sp"
                 android:typeface="serif"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.706" />
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
-                android:id="@+id/merkbotol"
+                android:id="@+id/merkbotol2"
                 android:layout_width="105dp"
                 android:layout_height="22dp"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="61dp"
-                android:layout_marginEnd="261dp"
-                android:layout_marginBottom="168dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginBottom="188dp"
                 android:text="Merk Botol :"
                 android:textColor="#0C0C0C"
                 android:textColorHighlight="#020202"
@@ -220,11 +190,8 @@
                 android:textStyle="bold"
                 android:typeface="serif"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.706" />
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -8,49 +8,60 @@
     tools:context=".menu">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout2"
         android:layout_width="411dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         android:background="#AACC67"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/btnkeluar"
+            android:id="@+id/btnkembali3"
             android:layout_width="59dp"
             android:layout_height="54dp"
             android:backgroundTint="#00FFFFFF"
-            android:contentDescription="keluar"
+            android:contentDescription="kembali"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/kembali"
-            app:tint="#FAFAFA" />
+            app:tint="#FBFBFA" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="81dp"
+            android:id="@+id/textView3"
+            android:layout_width="101dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="Home Page"
             android:textColor="#FFFFFF"
             android:typeface="serif" />
-
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnimportgmbr"
+        android:layout_width="119dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="397dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="importgambar"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/import_hijau" />
 
     <ImageButton
         android:id="@+id/btnambilgmbr"
         android:layout_width="119dp"
         android:layout_height="110dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="279dp"
-        android:layout_marginEnd="247dp"
-        android:layout_marginBottom="342dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginBottom="397dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="ambilgambar"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/take_a_photo" />
@@ -59,50 +70,61 @@
         android:id="@+id/txtambilgambar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="256dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
+        android:background="#00100E0E"
         android:text="Ambil Gambar"
         android:textColor="#020202"
+        android:textColorHighlight="#040303"
+        android:textColorLink="#050505"
         android:textIsSelectable="false"
         android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/btnimportgmbr"
-        android:layout_width="119dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="243dp"
-        android:layout_marginTop="279dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="342dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="importgambar"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/import_hijau" />
+        app:layout_constraintEnd_toEndOf="@+id/btnambilgmbr"
+        app:layout_constraintTop_toBottomOf="@+id/btnambilgmbr" />
 
     <TextView
         android:id="@+id/txtimport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="404dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
         android:text="Import Gambar"
         android:textColor="#000000"
+        android:textColorHighlight="#050505"
+        android:textColorHint="#0E0E0E"
+        android:textColorLink="#0B0A0A"
         android:typeface="serif"
+        app:layout_constraintStart_toStartOf="@+id/btnimportgmbr"
+        app:layout_constraintTop_toBottomOf="@+id/btnimportgmbr" />
+
+    <ImageButton
+        android:id="@+id/btn_display"
+        android:layout_width="116dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="215dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="buton display"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/view_view_search_find_11037" />
+
+    <TextView
+        android:id="@+id/txtimport2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="178dp"
+        android:text="Display "
+        android:textColor="#000000"
+        android:textColorHighlight="#050505"
+        android:textColorHint="#100F0F"
+        android:textColorLink="#0B0A0A"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_display" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
