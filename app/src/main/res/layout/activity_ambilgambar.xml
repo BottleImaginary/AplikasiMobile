@@ -10,15 +10,12 @@
     <ImageView
         android:id="@+id/hasilfoto"
         android:layout_width="409dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginBottom="364dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="296dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
@@ -72,13 +69,13 @@
         android:id="@+id/frameLayout"
         android:layout_width="409dp"
         android:layout_height="240dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="118dp"
         android:background="#DCEDC8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hasilfoto"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
